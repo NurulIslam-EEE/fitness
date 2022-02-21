@@ -1,3 +1,4 @@
+
 import React from 'react'
 import style from '../styles/about.module.css'
 import {  faPlusSquare } from '@fortawesome/free-regular-svg-icons'
@@ -32,5 +33,6 @@ const About = () => {
     </div>
   )
 }
+
 
 export default About
