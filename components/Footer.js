@@ -9,18 +9,27 @@ const Footer = () => {
             </div>
             <div>
                 <h3>USEFUL LINKS</h3>
+                <div className={styles.links}>
+                    <div>
+
+                        <p>About</p>
+                        <p>Our Trainers</p>
+                        <p>Services</p>
+                        <p>Bmi Calculator</p>
+                        <p>Classes</p>
+                    </div>
+                    <div>
+
+                        <p>Blog</p>
+                        <p>Gallery</p>
+                        <p>Classes Timetable</p>
+                        <p>Shop</p>
+                        <p>Contact Us</p>
+                    </div>
+                </div>
 
 
-                <p>About</p>
-                <p>Our Trainers</p>
-                <p>Services</p>
-                <p>Bmi Calculator</p>
-                <p>Classes</p>
-                <p>Blog</p>
-                <p>Gallery</p>
-                <p>Classes Timetable</p>
-                <p>Shop</p>
-                <p>Contact Us</p>
+
             </div>
             <div>
                 <h3>SUBSCRIBE US</h3>

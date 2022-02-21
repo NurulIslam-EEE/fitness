@@ -77,7 +77,19 @@
   align-items: center;
   justify-content: center;
 }
-
+.box {
+  background: linear-gradient(to right, black 50%, #da1d25 50%);
+  width: 14px;
+  height: 25px;
+  margin-right: 5px;
+}
+.title {
+  text-align: center;
+}
+.title div {
+  display: flex;
+  justify-content: center;
+}
 /* responsive */
 
 @media screen and (max-width: 600px) {

@@ -39,3 +39,14 @@
   margin-top: 20px;
   transform: rotate(-90deg);
 }
+
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  .socialContainer {
+    display: none;
+  }
+  .banner {
+    background-size: cover;
+  }
+}
