@@ -10,7 +10,9 @@ const Layout = () => {
         <>
             <Banner />
             <Features />
+
             <About/>
+
             <Slider/>
             <Footer />
         </>
