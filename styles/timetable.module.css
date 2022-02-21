@@ -1,0 +1,67 @@
+.container {
+text-align: center;
+color: white;
+padding:10em;
+background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('http://themes.potenzaglobalsolutions.com/html/fitness/images/bg/05.jpg');
+background-size: cover;
+background-position: center;
+
+}
+.days{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+}
+.day{
+    background-color: black;
+    font-size: 16px;
+    padding: 12px 30px;
+    margin: 5px;
+    cursor: pointer;
+}
+.timeTable{
+    font-size: 16px;
+    font-weight: 500;
+}
+.row{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.topRow{
+    color: #da1d25;
+}
+.row:nth-child(2n-1){
+background-color: black;
+}
+.box{
+    padding: 10px;
+    background: linear-gradient(to right, rgb(255, 255, 255) 50%, #da1d25 50%);
+    width: 10px;
+    margin: 0 5px;
+}
+.titleText{
+display: flex;
+justify-content: center;
+font-weight: 600;
+margin: 10px auto;
+color: #da1d25;
+}
+.subTitleText{
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+}
+.tableRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableRow img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin:  0 10px;
+}
