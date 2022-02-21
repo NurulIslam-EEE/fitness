@@ -1,4 +1,5 @@
 import React from 'react';
+import About from './About';
 import Banner from './Banner';
 import Features from './Features';
 import Footer from './Footer';
@@ -9,6 +10,7 @@ const Layout = () => {
         <>
             <Banner />
             <Features />
+            <About/>
             <Slider/>
             <Footer />
         </>
