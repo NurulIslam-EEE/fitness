@@ -50,4 +50,5 @@ color: #da1d25;
 .partTwo{
     background-color: rgba(65, 65, 65, 0.301);
     max-width: 500px;
+    width: 100%;
 }

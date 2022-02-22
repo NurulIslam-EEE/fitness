@@ -1,4 +1,3 @@
-
 import React from 'react'
 import style from '../styles/about.module.css'
 import {  faPlusSquare } from '@fortawesome/free-solid-svg-icons';

@@ -9,8 +9,8 @@ function Slider() {
         <span className={style.subTitleText}>
         MEET THE MAGNIFICENT TRAINERS
         </span>
-        <NextSlider/>
       </div>
+      <NextSlider/>
     </div>
   )
 }
