@@ -89,4 +89,12 @@
   .banner {
     background-size: cover;
   }
+  .bannerFooter {
+    display: block;
+  }
+  .bannerFooterChild3,
+  .bannerFooterChild2,
+  .bannerFooterChild1 {
+    width: 95%;
+  }
 }

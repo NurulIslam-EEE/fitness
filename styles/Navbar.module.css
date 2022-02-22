@@ -27,7 +27,8 @@
   justify-content: space-around;
 }
 .nav a {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -40,26 +41,33 @@
   padding: 10px 20px;
   font-weight: 900;
 }
+.downIcon {
+  height: 12px;
+  width: 12px;
+  font-weight: 900;
+}
 
 /* responsive */
 @media only screen and (max-width: 600px) {
   .nav ul {
-    padding-top: 80px;
+    padding-top: 10px;
     z-index: 2;
-    justify-content: flex-start;
-    background: black;
+
+    background: white;
     position: absolute;
-    left: 0;
+    left: 0%;
     top: 0;
     width: 100vw;
     min-height: 110vh;
     flex-direction: column;
     overflow: hidden;
-    transition-duration: 300ms;
+
     transform: translateX(-100%);
+    transition-duration: 600ms;
   }
   .nav.open ul {
     transform: translateX(0);
+    transform: translateY(90px);
   }
   .nav {
     width: fit-content;
@@ -67,15 +75,21 @@
   .nav ul li {
     margin-bottom: 40px;
   }
+  .nav a {
+    color: black;
+    font-size: 25px;
+  }
   .nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0 3%;
   }
   .navIcon {
     position: relative;
     z-index: 4;
     margin-top: 25px;
-    width: 35px;
+    width: 50px;
     height: fit-content;
     cursor: pointer;
   }
