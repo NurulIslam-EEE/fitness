@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import style from '../styles/testimony.module.css';
@@ -63,4 +64,3 @@ export default class Testimony extends Component {
 		);
 	}
 };
-

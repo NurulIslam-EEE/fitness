@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   background-color: black;
   color: white;
+  padding: 20px;
 }
 
 .notify {
@@ -11,4 +12,25 @@
   border: 0;
   color: white;
   margin-top: 10px;
+}
+.links {
+  display: flex;
+}
+.links:nth-child(1) {
+  padding: 10px;
+}
+.footer2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    display: block;
+  }
+  .footer2 {
+    display: block;
+  }
 }

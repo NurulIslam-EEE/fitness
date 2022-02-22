@@ -1,3 +1,4 @@
+
 import React from 'react'
 import style from '../styles/abouttwo.module.css'
 import {  faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
@@ -43,5 +44,6 @@ const AboutTwo = () => {
     </div>
   )
 }
+
 
 export default AboutTwo
