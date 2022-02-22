@@ -9,20 +9,10 @@ import Slider from './slider';
 import TimeTable from './TimeTable';
 
 
-const Layout = () => {
+const Layout = ({children}) => {
     return (
         <>
-            <Banner />
-            <Features />
-
-            <About/>
-            <TimeTable/>
-
-
-            <About/>
-
-
-            <Slider/>
+          {children}
             <Footer />
         </>
     );

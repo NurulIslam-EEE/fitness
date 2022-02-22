@@ -1,5 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import About from '../components/About'
+import AboutTwo from '../components/AboutTwo'
+import Banner from '../components/Banner'
+import Features from '../components/Features'
+import Slider from '../components/slider'
+import TimeTable from '../components/TimeTable'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,7 +18,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+      <Banner />
+            <Features />
 
+            <About/>
+            <TimeTable/>
+
+
+            <Slider/>
+            <AboutTwo/>
       </main>
 
 

@@ -1,9 +1,11 @@
 
+/* main container */
 .container{
     width: 90%;
     margin: 10px auto;
     padding: 50px 0;
 }
+/* each items of the slide */
 .item{
     position: relative;
     color: white;
@@ -22,6 +24,7 @@
 .img{
     width: 100%;
 }
+
 .title{
     font-weight: 900;
     font-size: 2em;
@@ -42,8 +45,9 @@
 .icon{
     background-color: #da1d25;
     color: white;
-    padding: 5px;
     margin: 10px 0;
+    width: 25px;
+    padding: 5px;
 }
 .item:hover .icons{
     display: flex;
