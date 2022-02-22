@@ -1,9 +1,9 @@
-
 import Head from 'next/head'
 import Image from 'next/image'
 import About from '../components/About'
 import AboutTwo from '../components/AboutTwo'
 import Banner from '../components/Banner'
+import Blogs from '../components/Blogs'
 import Features from '../components/Features'
 import Slider from '../components/slider'
 import TimeTable from '../components/TimeTable'
@@ -28,10 +28,10 @@ export default function Home() {
 
             <Slider/>
             <AboutTwo/>
+            <Blogs/>
       </main>
 
 
     </div>
   )
 }
-
