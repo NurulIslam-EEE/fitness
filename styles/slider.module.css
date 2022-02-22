@@ -1,11 +1,15 @@
 
+
 /* main container */
+
 .container{
     width: 90%;
     margin: 10px auto;
     padding: 50px 0;
 }
+
 /* each items of the slide */
+
 .item{
     position: relative;
     color: white;
@@ -45,9 +49,13 @@
 .icon{
     background-color: #da1d25;
     color: white;
+
     margin: 10px 0;
     width: 25px;
     padding: 5px;
+
+  
+
 }
 .item:hover .icons{
     display: flex;

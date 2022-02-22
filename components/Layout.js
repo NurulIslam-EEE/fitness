@@ -9,10 +9,12 @@ import Slider from './slider';
 import TimeTable from './TimeTable';
 
 
+
 const Layout = ({children}) => {
     return (
         <>
           {children}
+
             <Footer />
         </>
     );
