@@ -1,4 +1,3 @@
-
 import React from 'react';
 import styles from '../styles/Banner.module.css';
 import { faFacebookF, faInstagram, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons'
@@ -47,6 +46,5 @@ const Banner = () => {
         </div >
     );
 };
-
 
 export default Banner;

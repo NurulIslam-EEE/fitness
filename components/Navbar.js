@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
@@ -62,6 +61,5 @@ const Navbar = () => {
         </header>
     );
 };
-
 
 export default Navbar;

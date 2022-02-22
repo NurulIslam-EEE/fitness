@@ -11,9 +11,6 @@ function Slider() {
         </span>
         <NextSlider/>
       </div>
-      <div className={style.sliderImages}>
-        
-      </div>
     </div>
   )
 }
