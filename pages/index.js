@@ -21,8 +21,7 @@ export default function Home() {
       <main className={styles.main}>
       <Banner />
             <Features />
-
-            <About/>
+          <About/>
             <TimeTable/>
 
 

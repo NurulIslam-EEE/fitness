@@ -1,7 +1,6 @@
-
 import React from 'react'
 import style from '../styles/about.module.css'
-import {  faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import {  faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const About = () => {

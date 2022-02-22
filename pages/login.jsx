@@ -1,8 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import style from '../styles/login.module.css'
 import {   faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import SignIn from '../components/signIn'
+import Register from '../components/Register'
 const Login = () => {
+  const [switchForm, setswitchForm] = useState(true)
+  const signInForm = () =>{
+    setswitchForm(true)
+  }
+   const registerForm = () =>{
+    setswitchForm(false)
+   }
   return (
     <div className={style.container}>
         <div className={style.banner}>
@@ -19,18 +28,15 @@ const Login = () => {
         </div>
         <div className={style.inputForm}>
         <div className={style.formBtn}>
-        <span className={style.loginBtn}>Log in</span>
-        <span className={style.registerBtn}>Register</span>
+        <span className={style.loginBtn} style={{background: switchForm ? '#da1d25' : 'black'}} onClick={signInForm}>Log in</span>
+        <span className={style.registerBtn} onClick={registerForm} style={{background: !switchForm ? '#da1d25' : 'black'}}>Register</span>
         </div>
-        <form  className={style.form}>
-            <input type="text" className={style.input} placeholder='Username'/>
-            <input type="password" className={style.input} placeholder='Password'/>
-            <div>
-            <input type="submit" placeholder='SIGN UP' className={style.signUp} />
-            <button className={style.alreadyUser}>Already Registered User? Click here to login</button>
-            </div>
-            
-        </form>
+        {switchForm ?
+ <SignIn/> :
+ <Register/>
+        }
+    
+    
         <div className={style.fbLogin}>
             <span>Login or Sign in with</span>
             <span className={style.fbBtn}> <FontAwesomeIcon icon={faFacebookF} /> Login with Facebook</span>

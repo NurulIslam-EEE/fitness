@@ -2,9 +2,10 @@
 text-align: center;
 color: white;
 padding:10em;
-background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('http://themes.potenzaglobalsolutions.com/html/fitness/images/bg/05.jpg');
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://themes.potenzaglobalsolutions.com/html/fitness/images/bg/05.jpg');
 background-size: cover;
 background-position: center;
+overflow-x: auto;
 
 }
 .days{
@@ -23,6 +24,8 @@ background-position: center;
 .timeTable{
     font-size: 16px;
     font-weight: 500;
+    min-width: 500px;
+    max-width: 1000px;
 }
 .row{
     background-color: rgba(0, 0, 0, 0.5);
