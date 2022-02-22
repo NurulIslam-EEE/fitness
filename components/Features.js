@@ -6,8 +6,16 @@ const Features = () => {
     return (
         <>
             <div>
-                <p> WHY CHOOSE US?</p>
-                <h1>OUR KEY FEATURES SEE SOME</h1>
+                <div className={styles.title}>
+                    <div>
+                        <p className={styles.box}></p>
+                        <p> WHY CHOOSE US?</p>
+
+                    </div>
+
+                    <h1>OUR KEY FEATURES SEE SOME</h1>
+                </div>
+
                 <div className={styles.featureContainer}>
                     <div className={styles.feature} >
                         <Image className={styles.img} src="/img/01.jpg" width="260" height="260" alt='' />

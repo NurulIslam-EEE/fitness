@@ -1,10 +1,13 @@
-
-
 .banner {
   background: url("../public//img/01\ \(1\).jpg");
   background-position: center;
+  background-size: cover;
   height: 100vh;
   width: 100%;
+  color: white;
+  padding: 0;
+}
+.bannerSocialTitle {
   color: white;
   display: flex;
   align-items: center;
@@ -41,4 +44,49 @@
   margin-top: 20px;
   transform: rotate(-90deg);
 }
+.bannerFooter {
+  display: flex;
+  color: white;
+  padding-left: 10%;
+}
+.bannerFooterChild1 {
+  background: transparent;
+  height: 130px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+.bannerFooterChild1:hover,
+.bannerFooterChild3:hover {
+  background: #da1d25;
+}
+.bannerFooterChild2 {
+  background: #da1d25;
+  height: 130px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.bannerFooterChild3 {
+  background: transparent;
+  height: 130px;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+/* responsive */
+
+@media screen and (max-width: 600px) {
+  .socialContainer {
+    display: none;
+  }
+  .banner {
+    background-size: cover;
+  }
+}
