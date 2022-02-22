@@ -1,0 +1,23 @@
+.icon{
+    background: #da1d25;
+    color: #ffffff;
+    font-size: 42px;
+    border-radius: 0%;
+    padding: 15px;
+    width: 100px;
+    margin: 30px auto;
+}
+.para{
+    font-weight: normal;
+    line-height: 24px
+}
+.name{
+    font-size: 18px;
+    font-weight: 900;
+    color: #da1d25;
+    margin: 20px auto;
+    text-transform: uppercase;
+}
+.title{
+    margin-bottom: 20px;
+}
