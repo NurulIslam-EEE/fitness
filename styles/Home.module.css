@@ -1,15 +1,14 @@
-
 .main {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.container {
+/* .container {
   padding: 0 2rem;
-}
+} */
 
-.main {
+/* .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -17,7 +16,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .footer {
   display: flex;
@@ -121,4 +120,3 @@
     flex-direction: column;
   }
 }
-
