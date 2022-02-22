@@ -120,3 +120,16 @@
     flex-direction: column;
   }
 }
+
+.backToTop{
+  
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  background: #da1d25;
+  color: white;
+  cursor: pointer;
+  border: none;
+
+}
