@@ -26,6 +26,7 @@ overflow-x: auto;
     font-weight: 500;
     min-width: 500px;
     max-width: 1000px;
+    margin: auto;
 }
 .row{
     background-color: rgba(0, 0, 0, 0.5);

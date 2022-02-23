@@ -3,7 +3,7 @@
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     padding: 100px 10px;
 }
 .partOne{
@@ -51,4 +51,7 @@ color: #da1d25;
     background-color: rgba(65, 65, 65, 0.301);
     max-width: 500px;
     width: 100%;
+}
+.partOne, .partTwo{
+    margin: 0px 45px;
 }

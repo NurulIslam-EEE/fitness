@@ -23,7 +23,7 @@ text-align: center;
 .blogs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 }
 .blog{
     width: 350px;
@@ -33,7 +33,7 @@ text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 20px;
 }
 .blog img{
     width: 100%;
