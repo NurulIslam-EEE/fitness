@@ -68,3 +68,22 @@ color: #da1d25;
     object-fit: cover;
     margin:  0 10px;
 }
+@media screen and (max-width:700px){
+   .container{
+       padding:2.5em;
+   }
+    .titleText{
+        width: 100%;
+        font-size: 15px;
+    }
+    .subTitleText{
+        font-size: 24px;
+        display: block;
+        margin: 35px 0;
+    }
+    .day{
+        font-size: 17px;
+        padding: 5px 18px;
+        margin: 5px;
+    }
+}

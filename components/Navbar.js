@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
 import Image from "next/image";
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Navbar = () => {
@@ -21,33 +23,33 @@ const Navbar = () => {
                 <ul >
                     <li>
                         <Link href='/'>
-                            <a>HOME</a>
+                            <a>HOME <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
 
                     </li>
                     <li>
                         <Link href='/'>
-                            <a>PAGESt</a>
+                            <a>PAGES <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
                     <li>
                         <Link href='/'>
-                            <a>CLASSES</a>
+                            <a>CLASSES <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
                     <li>
                         <Link href='/'>
-                            <a>GALLERY</a>
+                            <a>GALLERY <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
                     <li>
                         <Link href='/'>
-                            <a>BLOGS</a>
+                            <a>BLOGS <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
                     <li>
                         <Link href='/'>
-                            <a>SHOP</a>
+                            <a>SHOP <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
                 </ul>
