@@ -26,11 +26,23 @@
   color: white;
   padding: 20px;
 }
+.hr {
+  background-color: rgb(32, 32, 32);
+  height: 1px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
 @media screen and (max-width: 600px) {
   .footer {
     display: block;
   }
   .footer2 {
     display: block;
+    width: 100%;
+  }
+  .footer2 div {
+    margin: 0 auto;
   }
 }

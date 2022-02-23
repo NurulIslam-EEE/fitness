@@ -18,7 +18,10 @@ const Features = () => {
 
                 <div className={styles.featureContainer}>
                     <div className={styles.feature} >
-                        <Image className={styles.img} src="/img/01.jpg" width="260" height="260" alt='' />
+                        <div className={styles.img}>
+                            <Image src="/img/01.jpg" width="260" height="260" alt='' />
+                        </div>
+
                         <div className={styles.bar}>
 
                         </div>
@@ -29,7 +32,10 @@ const Features = () => {
                         </div>
                     </div>
                     <div className={styles.feature} >
-                        <Image className={styles.img} src="/img/02.jpg" width="260" height="260" alt='' />
+                        <div className={styles.img}>
+                            <Image src="/img/02.jpg" width="260" height="260" alt='' />
+                        </div>
+
                         <div className={styles.bar}>
 
                         </div>
@@ -39,7 +45,10 @@ const Features = () => {
                         </div>
                     </div>
                     <div className={styles.feature} >
-                        <Image className={styles.img} src="/img/03.jpg" width="260" height="260" alt='' />
+                        <div className={styles.img} >
+                            <Image src="/img/03.jpg" width="260" height="260" alt='' />
+                        </div>
+
                         <div className={styles.bar}>
 
                         </div>
@@ -49,7 +58,10 @@ const Features = () => {
                         </div>
                     </div>
                     <div className={styles.feature} >
-                        <Image className={styles.img} src="/img/04.jpg" width="260" height="260" alt='' />
+                        <div className={styles.img}>
+                            <Image src="/img/04.jpg" width="260" height="260" alt='' />
+                        </div>
+
                         <div className={styles.bar}>
 
                         </div>

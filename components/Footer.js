@@ -41,8 +41,47 @@ const Footer = () => {
                 </div>
                 <div>
                     <h3>OUR GALLERY</h3>
+                    <div className={styles.gallery}>
+                        <div>
+                            <Image src="/img/01 (2).jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/02 (2).jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/03 (2).jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/04 (2).jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/05.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/06.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/07.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/08.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/09.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/10.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/11.jpg" width="70" height="60" alt='' />
+                        </div>
+                        <div>
+                            <Image src="/img/12.jpg" width="70" height="60" alt='' />
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div className={styles.footer2}></div>
             <div className={styles.footer2}>
                 <div>
                     <Image className={styles.img} src="/img/logo.svg" width="100" height="100" alt='' />
