@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className={style.container}>
       <div className={style.texts}>
-      <span className={style.titleText}> <div className={style.box}></div>ABOUT OUR COMPANY</span>
+      <span className={style.titleText}> <div className={style.box}></div> ABOUT OUR COMPANY</span>
         <span className={style.subTitleText}>
         WHO WE ARE AND WHAT WE DO
         </span>
