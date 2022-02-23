@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
-  1024: { items: 3 },
+  1024: { items: 4 },
 };
 
 const items = [
@@ -113,6 +113,8 @@ const items = [
 const NextSlider = () => (
   <AliceCarousel 
   className={style.container}
+  autoPlay={true}
+  autoPlayInterval={5000}
       mouseTracking
       items={items}
       responsive={responsive}
