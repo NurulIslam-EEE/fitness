@@ -67,6 +67,24 @@
 .img {
   margin-left: 100px;
 }
+.homeLi {
+  position: relative;
+}
+.homeDropDown {
+  display: none;
+  position: absolute;
+  background: white;
+  color: black;
+  width: 200px;
+  height: 250px;
+  padding-left: 20px;
+}
+.homeLi:hover.homeDropDown {
+  display: block;
+}
+.homeDropDown a {
+  color: black;
+}
 
 /* responsive */
 @media only screen and (max-width: 600px) {
