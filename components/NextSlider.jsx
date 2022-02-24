@@ -6,8 +6,8 @@ import {   faFacebookF , faInstagram, faTwitter, faPinterest} from '@fortawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const responsive = {
   0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 4 },
+  750: { items: 2 },
+  1200: { items: 4 },
 };
 
 const items = [
