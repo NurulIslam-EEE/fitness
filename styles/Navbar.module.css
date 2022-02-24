@@ -11,14 +11,24 @@
   background-color: black;
   margin: 0;
   padding: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 8;
+}
+.header2 {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(32, 32, 32);
 }
 .nav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   align-items: center;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .nav ul {
@@ -35,16 +45,27 @@
   white-space: nowrap;
   margin-right: 20px;
 }
+.nav a:hover {
+  color: #da1d25;
+}
 .nav button {
   background-color: #da1d25;
   color: white;
   padding: 10px 20px;
   font-weight: 900;
+  margin-right: 100px;
+  border: 0;
 }
 .downIcon {
   height: 12px;
   width: 12px;
   font-weight: 900;
+}
+.navIcon {
+  display: none;
+}
+.img {
+  margin-left: 100px;
 }
 
 /* responsive */
@@ -86,6 +107,7 @@
     padding: 0 3%;
   }
   .navIcon {
+    display: block;
     position: relative;
     z-index: 4;
     margin-top: 25px;

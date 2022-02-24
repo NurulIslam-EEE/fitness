@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/Navbar.module.css';
 import Link from 'next/link';
 import Image from "next/image";
@@ -7,18 +7,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const Navbar = () => {
+    const [classname, setClassname] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const openMenu = () => setIsOpen(!isOpen);
+    const listenScrollEvent = () => {
+        window.scrollY > 200
+            ? setClassname(true)
+            : setClassname(false)
+    }
+    // Similar to componentDidMount and componentDidUpdate:
+    useEffect(() => {
+        window.addEventListener("scroll", listenScrollEvent)
+    })
     console.log(isOpen)
     return (
-        <header className={styles.header}>
+        <header className={classname ? styles.header : styles.header2}>
 
             <nav className={isOpen === false ? styles.nav : styles.nav + ' ' + styles.open}>
 
 
 
-                <div>
-                    <Image className={styles.img} src="/img/logo.svg" width="80" height="80" alt='' />
+                <div className={styles.img}>
+                    <Image src="/img/logo.svg" width="80" height="80" alt='' />
                 </div>
                 <ul >
                     <li>

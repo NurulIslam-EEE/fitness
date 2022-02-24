@@ -1,22 +1,25 @@
 .banner {
   background: url("../public//img/01\ \(1\).jpg");
   background-position: center;
-  background-size: cover;
-  height: 100vh;
+  background-size: contain;
+  object-fit: cover;
+  height: 140vh;
   width: 100%;
   color: white;
   padding: 0;
+  font-family: sans-serif;
 }
 .bannerSocialTitle {
   color: white;
   display: flex;
   align-items: center;
+  height: 110vh;
 }
 .banner span {
   color: #da1d25;
 }
 .banner h1 {
-  font-size: 90px;
+  font-size: 120px;
   font-weight: bolder;
   margin: 0;
 }
@@ -48,6 +51,8 @@
   display: flex;
   color: white;
   padding-left: 10%;
+  align-items: flex-end;
+  height: 30vh;
 }
 .bannerFooterChild1 {
   background: transparent;
@@ -86,8 +91,12 @@
   .socialContainer {
     display: none;
   }
+  .bannerSocialTitle {
+    height: 80vh;
+  }
   .banner {
     background-size: cover;
+    height: 130vh;
   }
   .bannerFooter {
     display: block;
