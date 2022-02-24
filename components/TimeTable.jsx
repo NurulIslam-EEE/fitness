@@ -11,9 +11,18 @@ const TimeTable = () => {
         'Saturday',
         'Sunday'
     ])
+
+   const [ show, setShow] = useState(true)
     const [select, setSelect] = useState(0)
-    const  handleClick = (index) =>{
+    const  handleClick =  (index) =>{
         setSelect(index)
+       setShow(false)
+         setTimeout(()=>{
+          setShow(true)
+        }, 500)
+      
+        
+      
      }
 
     const dayItems = days.map((d, i)=> 
@@ -24,6 +33,8 @@ const TimeTable = () => {
     )
   return (
     <div className={style.container}>
+   
+    
          <span className={style.titleText}> <div className={style.box}></div>CLASS LIST BY GOALS</span>
         <span className={style.subTitleText}>
         WHAT IS TIMETABLE FOR CLASSES
@@ -31,6 +42,8 @@ const TimeTable = () => {
     <div className={style.days}>
     {dayItems}
     </div>
+{
+  show?
     <div className={style.timeTable}>
     <div className={style.row}>
     <span className={style.topRow}>Time</span>
@@ -94,6 +107,8 @@ const TimeTable = () => {
     </span>
     </div>
     </div>
+: null
+}
     </div>
   )
 }

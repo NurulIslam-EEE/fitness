@@ -3,7 +3,7 @@
 /* main container */
 
 .container{
-    width: 90%;
+    width: 1200px;
     margin: 10px auto;
     padding: 2em 0;
 }
@@ -78,12 +78,21 @@ font-weight: 600;
 .text{
     margin: 50px 0;
 }
+@media screen and (max-width:1000px){
+    .container{
+        width: 70%;
+    }
+    .item{
+        width: 70%;
+    }
+}
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:750px) {
     .item{
         width: 100%;
     }
     .container{
         padding: 0;
+        width: 90%;
     }
 }
