@@ -1,19 +1,34 @@
 .banner {
   background: url("../public//img/01\ \(1\).jpg");
-  background-position: center;
-  background-size: contain;
-  object-fit: cover;
-  height: 140vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1357px;
   width: 100%;
   color: white;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Teko, sans-serif;
 }
 .bannerSocialTitle {
   color: white;
   display: flex;
   align-items: center;
-  height: 110vh;
+  height: 1215px;
+  position: relative;
+}
+.bannerSocialTitle3 {
+  height: 100%;
+  width: 1320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socialContainer {
+  position: absolute;
+  top: 35%;
+  left: 60px;
+  font-size: 18px;
+  font-family: sans-serif;
 }
 .banner span {
   color: #da1d25;
@@ -27,7 +42,8 @@
   transform: rotate(-90deg);
 }
 .bannerTitle {
-  margin-left: 50px;
+  margin-left: 110px;
+  width: 1016px;
 }
 .bar {
   width: 4px;
@@ -52,7 +68,7 @@
   color: white;
   padding-left: 10%;
   align-items: flex-end;
-  height: 30vh;
+  height: 142px;
 }
 .bannerFooterChild1 {
   background: transparent;
@@ -86,7 +102,31 @@
   transition: 1s;
 }
 /* responsive */
-
+@media (min-width: 1400px) {
+  .bannerSocialTitle2 {
+    max-width: 1320px;
+  }
+}
+@media (min-width: 1200px) {
+  .bannerSocialTitle2 {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .bannerSocialTitle2 {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .bannerSocialTitle2 {
+    max-width: 720px;
+  }
+}
+@media (min-width: 576px) {
+  .bannerSocialTitle2 {
+    max-width: 540px;
+  }
+}
 @media screen and (max-width: 600px) {
   .socialContainer {
     display: none;
