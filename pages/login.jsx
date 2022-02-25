@@ -3,7 +3,8 @@ import style from '../styles/login.module.css'
 import {   faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SignIn from '../components/signIn'
-import Register from '../components/Register'
+import Register from '../components/Register';
+import Link from 'next/link';
 const Login = () => {
   const [switchForm, setswitchForm] = useState(true)
   const signInForm = () =>{
@@ -22,7 +23,8 @@ const Login = () => {
     Create more robust client connections, make more sales, and save time with our end to end solution.
     </div>
     <div className={style.buttons}>
-    <span className={style.home}>Home</span>/
+    
+    <span className={style.home}><Link href='/'>Home</Link></span>/
     <span className={style.login}>Login</span>
     </div>
         </div>

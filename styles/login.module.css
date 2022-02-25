@@ -1,154 +1,155 @@
-.banner{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://themes.potenzaglobalsolutions.com/html/fitness/images/bg/06.jpg');
-    color: white;
-    background-size: cover;
-background-position: center center;
-padding:10em 0 5em;
-position: relative;
-text-align: center;
-margin-bottom: 10px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-.title{
-    font-size: 4rem;
-    color: #da1d25 ;
-    font-weight: 600;
-}
-.subTitle{
-    font-size: 1.25rem;
-    line-height: 24px;
-    font-weight: 600;
-    margin: 20px auto;
-    width: 50%;
-}
-.buttons{
-    background-color: #da1d25;
-    padding: 12px 35px;
-    position: absolute;
-    bottom: -5px;
-    text-align: center;
-    z-index: 99;
-    margin: 0 auto;
-    font-weight: 900;
-    font-size: 18px;
-}
-.home{
-margin: 5px;
-cursor: pointer;
-}
-.login{
-    margin: 5px;
-    color: black;
-    cursor: pointer;
-}
-.inputForm{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-    padding: 5em 0;
-}
-.formBtn{
-    margin: 25px auto;
-    display: flex;
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("http://themes.potenzaglobalsolutions.com/html/fitness/images/bg/06.jpg");
+  color: white;
+  background-size: cover;
+  background-position: center center;
+  padding: 10em 0 5em;
 
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.loginBtn, .registerBtn{
-    font-size: 20px;
-    padding: 12px 30px;
-    border-radius: 0;
-    font-weight: 700;
-    color: white;
-    margin: 10px;
-    cursor: pointer;
-    
+.title {
+  font-size: 4rem;
+  color: #da1d25;
+  font-weight: 600;
 }
-.loginBtn{
-    background-color: #da1d25;
+.subTitle {
+  font-size: 1.25rem;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 20px auto;
+  width: 50%;
 }
-.registerBtn{
-    background-color: black;
+.buttons {
+  background-color: #da1d25;
+  padding: 12px 35px;
+  position: absolute;
+  bottom: -5px;
+  text-align: center;
+  z-index: 99;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 18px;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 20px auto;
+.home {
+  margin: 5px;
+  cursor: pointer;
+}
+.login {
+  margin: 5px;
+  color: black;
+  cursor: pointer;
+}
+.inputForm {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 5em 0;
+}
+.formBtn {
+  margin: 25px auto;
+  display: flex;
+}
+.loginBtn,
+.registerBtn {
+  font-size: 20px;
+  padding: 12px 30px;
+  border-radius: 0;
+  font-weight: 700;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+}
+.loginBtn {
+  background-color: #da1d25;
+}
+.registerBtn {
+  background-color: black;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 20px auto;
 }
 
-.input{
-    border: 1px solid #ebebeb;
-    border-radius: 0px;
-    padding: 10px 20px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 1em;
-    font-size: 15px;
-    margin: 10px;
-    width: 100%;
+.input {
+  border: 1px solid #ebebeb;
+  border-radius: 0px;
+  padding: 10px 20px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1em;
+  font-size: 15px;
+  margin: 10px;
+  width: 100%;
 }
-.signUp{
-    font-weight: 700;
-    font-size: 16px;
-    padding: 12px 40px;
-    border-radius: 0;
-    background: #da1d25;
-    border-color: #da1d25;
-    color: #ffffff;
-    position: relative;
-    cursor: pointer;
-    width: 50%;
-    outline: none;
-    border: none;
+.signUp {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 12px 40px;
+  border-radius: 0;
+  background: #da1d25;
+  border-color: #da1d25;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  width: 50%;
+  outline: none;
+  border: none;
 }
-.alreadyUser{
-    font-weight: bolder;
-    padding: 10px;
-    color: #333333;
-    cursor: pointer;
-    background-color: white;
-    border: none;
+.alreadyUser {
+  font-weight: bolder;
+  padding: 10px;
+  color: #333333;
+  cursor: pointer;
+  background-color: white;
+  border: none;
 }
-.fbLogin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(231, 231, 231);
-    width: 100%;
-    margin: 10px auto;
-    padding: 40px;
+.fbLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(231, 231, 231);
+  width: 100%;
+  margin: 10px auto;
+  padding: 40px;
 }
 .fbLogin span {
-    font-weight: bolder;
-    padding: 10px;
-    color: #666666;
+  font-weight: bolder;
+  padding: 10px;
+  color: #666666;
 }
-.fbLogin .fbBtn{
-    background-color: #5d82d1;
-    color: white;
+.fbLogin .fbBtn {
+  background-color: #5d82d1;
+  color: white;
+  width: 200px;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .subTitle {
+    line-height: 25px;
+    font-weight: 400;
+    margin: 20px auto;
     width: 90%;
-    text-align: center;
-}
-@media screen and (max-width:700px){
-    .subTitle{
-        line-height: 25px;
-        font-weight: 400;
-        margin: 20px auto;
-        width: 90%;
-    }
-    .loginBtn, .registerBtn{
-        font-size: 24px;
-        padding: 10px;
-    }
-    .inputForm{
-        width: 90%;
-    }
+  }
+  .loginBtn,
+  .registerBtn {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .inputForm {
+    width: 90%;
+  }
 }
