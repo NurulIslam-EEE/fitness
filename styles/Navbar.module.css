@@ -25,7 +25,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-
+  position: relative;
   align-items: center;
   margin: 0;
   font-family: sans-serif;
@@ -67,9 +67,9 @@
 .img {
   margin-left: 100px;
 }
-.homeLi {
+/* .homeLi {
   position: relative;
-}
+} */
 .homeDropDown {
   display: none;
   position: absolute;
@@ -78,13 +78,20 @@
   width: 200px;
   height: 250px;
   padding-left: 20px;
+  top: 90px;
+  left: 250px;
+  z-index: 1;
 }
-.homeLi:hover.homeDropDown {
+.nav:hover .homeDropDown {
   display: block;
+  cursor: pointer;
 }
 .homeDropDown a {
   color: black;
 }
+/* .homeLi:hover .homeDropDown {
+  display: block;
+} */
 
 /* responsive */
 @media only screen and (max-width: 600px) {
