@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Router, useRouter } from 'next/router';
 
 
 const Navbar = () => {
@@ -20,27 +21,48 @@ const Navbar = () => {
         window.addEventListener("scroll", listenScrollEvent)
     })
     console.log(isOpen)
+    //route checker
+    const route = useRouter();
     return (
         <header className={classname ? styles.header : styles.header2}>
 
             <nav className={isOpen === false ? styles.nav : styles.nav + ' ' + styles.open}>
 
-
-
                 <div className={styles.img}>
                     <Image src="/img/logo.svg" width="80" height="80" alt='' />
                 </div>
                 <ul >
-                    <li>
-                        <Link href='/'>
-                            <a>HOME <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
+                    <li className={styles.homeLi}>
+                        <Link href='/' >
+                            <a className={route.pathname == '/'? styles.active : null}>HOME <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
 
+
                     </li>
-                    <li>
-                        <Link href='/'>
-                            <a>PAGES <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
+                    <li className={styles.drop}>
+                        <Link href='/' >
+                            <a className={route.pathname == '/login'? styles.active : null}>PAGES <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
+                        <div className={styles.homeDropDown} >
+                    <h4>PAGES</h4>
+                    <ul>
+                        <li>
+                            <Link href='/login'>
+                                <a>Login </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='/'>
+                                <a>Contract Us </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href='/'>
+                                <a>Service </a>
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
                     </li>
                     <li>
                         <Link href='/'>
@@ -69,6 +91,7 @@ const Navbar = () => {
                     <div></div>
                     <div></div>
                 </div>
+                
             </nav>
         </header>
     );

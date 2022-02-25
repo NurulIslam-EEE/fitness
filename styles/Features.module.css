@@ -113,6 +113,9 @@
 /* responsive */
 
 @media screen and (max-width: 600px) {
+  .container {
+    max-height: 2300px !important;
+  }
   .featureContainer {
     display: block;
   }
