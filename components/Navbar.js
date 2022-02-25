@@ -11,7 +11,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const openMenu = () => setIsOpen(!isOpen);
     const listenScrollEvent = () => {
-        window.scrollY > 200
+        window.scrollY > 0
             ? setClassname(true)
             : setClassname(false)
     }
@@ -38,7 +38,7 @@ const Navbar = () => {
                             <h4>PAGES</h4>
                             <ul>
                                 <li>
-                                    <Link href='/'>
+                                    <Link href='/login'>
                                         <a>Login </a>
                                     </Link>
                                 </li>

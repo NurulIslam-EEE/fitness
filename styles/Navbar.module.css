@@ -105,16 +105,19 @@
 }
 .navItem:hover .homeDropDown {
   display: block;
+  cursor: pointer;
 }
 /* .homeLi:hover .homeDropDown {
   display: block;
 } */
 
 /* responsive */
+@media only screen and (max-width: 1000px) {
+}
 @media only screen and (max-width: 600px) {
   .nav ul {
     padding-top: 10px;
-    z-index: 2;
+    z-index: 9;
 
     background: white;
     position: absolute;
