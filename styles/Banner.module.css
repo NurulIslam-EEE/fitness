@@ -45,10 +45,12 @@
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 .banner h3 {
   margin-top: 0;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 .banner h4 {
   transform: rotate(-90deg);
@@ -111,6 +113,25 @@
   justify-content: center;
   transition: 1s;
 }
+
+/*  bullet point */
+.bullet {
+  position: absolute;
+  top: 500px;
+  right: 80px;
+}
+.bullet div {
+  height: 16px;
+  width: 16px;
+
+  margin-bottom: 5px;
+}
+.whiteColor {
+  background-color: white;
+}
+.redColor {
+  background-color: #da1d25;
+}
 /* responsive */
 /* @media (min-width: 1400px) {
   .bannerSocialTitle2 {
@@ -140,6 +161,9 @@
 @media screen and (max-width: 600px) {
   .bannerTitle {
     margin-top: 200px;
+  }
+  .bullet {
+    display: none;
   }
   .banner h1 {
     font-size: 70px;
