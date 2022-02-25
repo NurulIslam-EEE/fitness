@@ -78,16 +78,33 @@
   width: 200px;
   height: 250px;
   padding-left: 20px;
-  top: 90px;
-  left: 250px;
+  top: 20px;
+  left: 0px;
   z-index: 1;
 }
-.nav:hover .homeDropDown {
+.homeDropDown ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0;
+}
+.homeDropDown ul li {
+  width: 100%;
+  text-align: left;
+}
+/* .nav:hover .homeDropDown {
   display: block;
   cursor: pointer;
-}
+} */
 .homeDropDown a {
   color: black;
+}
+.navItem {
+  position: relative;
+}
+.navItem:hover .homeDropDown {
+  display: block;
 }
 /* .homeLi:hover .homeDropDown {
   display: block;

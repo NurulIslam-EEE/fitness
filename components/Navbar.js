@@ -29,11 +29,31 @@ const Navbar = () => {
                     <Image src="/img/logo.svg" width="80" height="80" alt='' />
                 </div>
                 <ul >
-                    <li className={styles.homeLi}>
+                    <li className={styles.navItem}>
                         <Link href='/'>
                             <a>HOME <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
-
+                        {/* dropdown */}
+                        <div className={styles.homeDropDown}>
+                            <h4>PAGES</h4>
+                            <ul>
+                                <li>
+                                    <Link href='/'>
+                                        <a>Login </a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/'>
+                                        <a>Contract Us </a>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link href='/'>
+                                        <a>Service </a>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </div>
 
                     </li>
                     <li>
@@ -68,26 +88,7 @@ const Navbar = () => {
                     <div></div>
                     <div></div>
                 </div>
-                <div className={styles.homeDropDown}>
-                    <h4>PAGES</h4>
-                    <ul>
-                        <li>
-                            <Link href='/'>
-                                <a>Login </a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/'>
-                                <a>Contract Us </a>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href='/'>
-                                <a>Service </a>
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+
             </nav>
         </header>
     );

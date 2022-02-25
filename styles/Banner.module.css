@@ -141,15 +141,19 @@
   .bannerTitle {
     margin-top: 200px;
   }
+  .banner h1 {
+    font-size: 70px;
+  }
   .socialContainer {
     display: none;
   }
-  .bannerSocialTitle {
-    height: 80vh;
+  .bannerSocialTitle2 {
+    height: 600px;
   }
+
   .banner {
     background-size: cover;
-    height: 130vh;
+    height: 1000px;
   }
   .bannerFooter {
     display: block;
