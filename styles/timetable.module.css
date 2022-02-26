@@ -34,6 +34,13 @@ overflow-x: auto;
       width: 1320px;
       max-width: initial;
     }
+    .day{
+        font-size: 16px;
+    padding: 10px 56px;
+    margin: 5px;
+    font-weight: 700;
+    font-family: sans-serif;
+    }
   }
 .row{
     background-color: rgba(0, 0, 0, 0.5);
