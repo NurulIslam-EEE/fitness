@@ -6,6 +6,7 @@ import Testimony from './testimony'
 const AboutTwo = () => {
   return (
     <div className={style.container}>
+        <div>
         <div className={style.partOne}>
         <span className={style.titleText}> <div className={style.box}></div>ABOUT OUR COMPANY</span>
         <span className={style.subTitleText}>
@@ -39,6 +40,7 @@ const AboutTwo = () => {
         </div>
         <div className={style.partTwo}>
           <Testimony/>
+        </div>
         </div>
     </div>
   )

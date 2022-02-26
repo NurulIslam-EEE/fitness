@@ -8,6 +8,7 @@ background-position: center;
 overflow-x: auto;
 
 }
+
 .days{
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +29,12 @@ overflow-x: auto;
     max-width: 1000px;
     margin: auto;
 }
+@media screen and (min-width:1320px) {
+    .timeTable{
+      width: 1320px;
+      max-width: initial;
+    }
+  }
 .row{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 14px 20px;

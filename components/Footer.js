@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className={styles.footer}>
                     <div>
                         <h3>ABOUT US</h3>
-                        <p>The first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic to it and it’s not reserved only for a select few people</p>
+                        <p style={{width:'90%'}}>The first thing to remember about success is that it is a process – nothing more, nothing less. There is really no magic to it and it’s not reserved only for a select few people</p>
                     </div>
                     <div>
                         <h3>USEFUL LINKS</h3>

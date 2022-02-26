@@ -4,29 +4,38 @@ display: flex;
 width: 1200px;
 margin: 20px auto;
 color: #666666;
-padding-top: 5em;
+padding-top: 8em;
 padding-bottom:0;
 }
+@media screen and (min-width:1320px) {
+    .container{
+      width: 1320px;
+    }
+  }
 .box{
     padding: 10px;
     background: linear-gradient(to right, black 50%, #da1d25 50%);
     width: 10px;
-    margin: 0 10px;
+    margin-right: 10px;
 }
 .titleText{
 display: flex;
+font-size: 1.4em;
 font-weight: 600;
 }
 .subTitleText{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 3em;
     color: #333333;
 }
 .para{
-    font-size: 16px;
-    font-weight: normal;
-    line-height: 24px;
     margin-bottom: 1rem;
+    font-size: 16px;
+    /* font-weight: 600; */
+    width: 80%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    line-height: 25px;
 }
 .img{
     width: 40%;

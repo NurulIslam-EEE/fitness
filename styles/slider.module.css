@@ -7,7 +7,11 @@
     margin: 10px auto;
     padding: 2em 0;
 }
-
+@media screen and (min-width:1320px) {
+    .container{
+      width: 1320px;
+    }
+  }
 /* each items of the slide */
 
 .item{
@@ -64,15 +68,16 @@
     padding: 10px;
     background: linear-gradient(to right, black 50%, #da1d25 50%);
     width: 10px;
-    margin: 0 10px;
+   margin-right: 10px;
 }
 .titleText{
 display: flex;
 font-weight: 600;
+font-size: 1.4em;
 }
 .subTitleText{
     font-weight: 700;
-    font-size: 2em;
+    font-size: 3em;
     color: #333333;
 }
 .text{
