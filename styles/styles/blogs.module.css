@@ -1,0 +1,81 @@
+.container{
+    text-align: center;
+    padding: 4em 0;
+}
+@media screen and (min-width:1320px) {
+    .container>div{
+      width: 1320px;
+      margin: 10px auto;
+    }
+  }
+.box{
+    padding: 10px;
+    background: linear-gradient(to right, black 50%, #da1d25 50%);
+    width: 10px;
+    margin: 0 10px;
+}
+.titleText{
+display: flex;
+font-weight: 600;
+font-size: 1.5em;
+text-align: center;
+    justify-content: center;
+}
+.subTitleText{
+    font-weight: 700;
+    font-size: 3em;
+    color: #333333;
+    margin-bottom: 50px;
+    
+}
+.blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blog{
+    width: 350px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.blog img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.blogMeta{
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 150px;
+    padding: 10px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 1.1em;
+    word-spacing: 3px;
+}
+.blogTitle{
+    margin: 25px auto;
+    color: #343a40;
+    font-size: 2em;
+}
+.blogSubtitle{
+    color: #6c757d;
+    margin: 10px auto;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        padding: 2em 0;
+    }
+    .subTitleText{
+        font-size: 1.5em;
+        display: block;
+        margin-bottom: 25px;
+    }
+}
