@@ -58,6 +58,7 @@ font-weight: 600;
     width: 35%;
     margin: 25px auto;
     margin-left: 0;
+    font-family: sans-serif;
     display: flex;
     justify-content: left;
     align-items: center;
