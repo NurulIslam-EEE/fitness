@@ -45,36 +45,10 @@
   color: white;
   white-space: nowrap;
   margin-right: 20px;
-  position: relative;
 }
-
-/* red dot for dropdown */
-.nav .homeDropDown a::before {
-  content: "";
-  background: #da1d25;
-  height: 6px;
-  width: 6px;
-  display: inline-block;
-  border-radius: 3px;
-  position: absolute;
-  left: -20px;
-  top: 4px;
-  bottom: 5px;
-  margin: auto;
-  border: inherit;
-}
-.nav .homeDropDown li {
-  padding: 10px 20px;
-  padding-left: 30px;
-  padding-right: 0px;
-}
-.nav li:hover a {
+.nav a:hover {
   color: #da1d25;
 }
-.nav .homeDropDown li:hover {
-  background: #da1d2617;
-}
-
 .nav button {
   background-color: #da1d25;
   color: white;
@@ -102,9 +76,9 @@
   position: absolute;
   background: white;
   color: black;
-  width: 330px;
+  width: 200px;
   height: 250px;
-  padding-left: 10px;
+  padding-left: 20px;
   top: 20px;
   left: 0px;
   z-index: 7;
@@ -118,7 +92,7 @@
   z-index: 7;
 }
 .homeDropDown ul li {
-  width: 92%;
+  width: 100%;
   text-align: left;
 }
 /* .nav:hover .homeDropDown {
