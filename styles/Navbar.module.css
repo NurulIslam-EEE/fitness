@@ -18,9 +18,9 @@
 .header2 {
   background-color: transparent;
   position: fixed;
+  z-index: 100;
   width: 100%;
   border-bottom: 0.5px solid rgb(32, 32, 32);
-  z-index: 5;
 }
 .nav {
   width: 100%;
@@ -45,39 +45,15 @@
   color: white;
   white-space: nowrap;
   margin-right: 20px;
-  position: relative;
+  padding: 20px 0;
 }
-
-/* red dot for dropdown */
-.nav .homeDropDown a::before {
-  content: "";
-  background: #da1d25;
-  height: 6px;
-  width: 6px;
-  display: inline-block;
-  border-radius: 3px;
-  position: absolute;
-  left: -20px;
-  top: 4px;
-  bottom: 5px;
-  margin: auto;
-  border: inherit;
-}
-.nav .homeDropDown li {
-  padding: 10px 20px;
-  padding-left: 30px;
-  padding-right: 0px;
-}
-.nav .navItem:hover a {
+.nav a:hover {
   color: #da1d25;
 }
-.nav .homeDropDown li:hover a {
+
+.nav li .active {
   color: #da1d25;
 }
-.nav .homeDropDown li:hover {
-  background: #da1d2617;
-}
-
 .nav button {
   background-color: #da1d25;
   color: white;
@@ -104,52 +80,82 @@
   display: none;
   position: absolute;
   background: white;
-  color: black;
-  width: 330px;
+  color: #333333;
+  width: 210px;
   height: 250px;
-  padding-left: 10px;
-  top: 20px;
-  left: 0px;
-  z-index: 7;
+  top: 80%;
+  transition: all 1s;
+  z-index: 1;
+  animation: slide 1s infinite linear;
+}
+.homeDropDown:hover {
+  display: block;
+}
+.homeDropDown h4 {
+  text-align: center;
+}
+.homeDropDown a {
+  color: #333333;
+  padding: 10px;
+}
+.homeDropDown a:hover {
+  background-color: rgba(239, 49, 57, 0.1);
+}
+.homeDropDown a::before {
+  content: "";
+  background: #da1d25;
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 5px;
+  border: inherit;
 }
 .homeDropDown ul {
-  display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
+  align-items: baseline;
   padding: 0;
-  z-index: 7;
 }
-.homeDropDown ul li {
-  width: 92%;
-  text-align: left;
+.homeDropDown li {
+  margin: 15px 0px;
+  font-weight: normal;
 }
-/* .nav:hover .homeDropDown {
+.nav .drop {
+}
+.nav .drop:hover .homeDropDown {
   display: block;
   cursor: pointer;
-} */
-.homeDropDown a {
-  color: black;
+  height: auto;
+  padding: 15px;
+  width: 20%;
 }
-.navItem {
-  position: relative;
-}
-.navItem:hover .homeDropDown {
-  display: block;
-  cursor: pointer;
-}
+
 /* .homeLi:hover .homeDropDown {
   display: block;
 } */
 
 /* responsive */
-@media only screen and (max-width: 1000px) {
-}
 @media only screen and (max-width: 600px) {
+  .homeDropDown a {
+    font-size: 20px;
+  }
+  .homeDropDown h4 {
+    font-size: 2em;
+  }
+  .nav .drop .homeDropDown {
+    top: 26%;
+    left: 25%;
+    width: 60%;
+    border-top: 1px solid black;
+  }
+
+  .nav .homeDropDown ul {
+    min-height: 0;
+  }
   .nav ul {
     padding-top: 10px;
-    z-index: 9;
-    margin-top: -10px;
+    z-index: 2;
+
     background: white;
     position: absolute;
     left: 0%;
@@ -202,32 +208,42 @@
   .nav button {
     display: none;
   }
-  /*
+}
+/*
 
 nth-child() is a pseudo-class matches elements based on their position in a group of siblings. Siblings are elements that are held in a parent section like the divs.
 
 */
 
-  .navIcon div:nth-child(3) {
-    margin-bottom: 0;
-    color: red;
+.navIcon div:nth-child(3) {
+  margin-bottom: 0;
+  color: red;
+}
+
+/* The rotate() CSS function defines a transformation that rotates an element around the x, y and z-axis without deforming it. */
+
+.open .navIcon div:nth-child(1) {
+  transform: rotateZ(-45deg) translateX(-8px) translateY(10px);
+  color: yellow;
+}
+
+/* The default colour of the hamburger icon is white but you can add any color */
+
+.open .navIcon div:nth-child(2) {
+  opacity: 0;
+}
+/* The class of open is from the javascript code */
+
+.open .navIcon div:nth-child(3) {
+  transform: rotateZ(45deg) translateX(-8px) translateY(-10px);
+}
+
+/* key frame animation */
+@keyframes slide {
+  0% {
+    transform: translate(300px 0px);
   }
-
-  /* The rotate() CSS function defines a transformation that rotates an element around the x, y and z-axis without deforming it. */
-
-  .open .navIcon div:nth-child(1) {
-    transform: rotateZ(-45deg) translateX(-8px) translateY(10px);
-    color: yellow;
-  }
-
-  /* The default colour of the hamburger icon is white but you can add any color */
-
-  .open .navIcon div:nth-child(2) {
-    opacity: 0;
-  }
-  /* The class of open is from the javascript code */
-
-  .open .navIcon div:nth-child(3) {
-    transform: rotateZ(45deg) translateX(-8px) translateY(-10px);
+  100% {
+    transform: translate(900px 0px);
   }
 }

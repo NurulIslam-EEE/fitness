@@ -42,6 +42,12 @@ overflow-x: auto;
     font-family: sans-serif;
     }
   }
+
+  @media screen and (min-width:1330px) and (max-width:1550px){
+      .day{
+        padding: 10px 20px;
+      }
+  }
 .row{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 14px 20px;
