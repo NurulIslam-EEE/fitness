@@ -18,9 +18,9 @@
 .header2 {
   background-color: transparent;
   position: fixed;
+  z-index: 100;
   width: 100%;
   border-bottom: 0.5px solid rgb(32, 32, 32);
-  z-index: 5;
 }
 .nav {
   width: 100%;
@@ -45,8 +45,13 @@
   color: white;
   white-space: nowrap;
   margin-right: 20px;
+  padding: 20px 0;
 }
 .nav a:hover {
+  color: #da1d25;
+}
+
+.nav li .active{
   color: #da1d25;
 }
 .nav button {
@@ -75,52 +80,83 @@
   display: none;
   position: absolute;
   background: white;
-  color: black;
-  width: 200px;
+  color: #333333;
+  width: 210px;
   height: 250px;
-  padding-left: 20px;
-  top: 20px;
-  left: 0px;
-  z-index: 7;
+  top: 80%;
+  transition: all 1s;
+  z-index: 1;
+  animation: slide 1s infinite linear;
 }
-.homeDropDown ul {
-  display: flex;
+.homeDropDown:hover{
+  display: block;
+}
+.homeDropDown h4{
+  text-align: center;
+}
+.homeDropDown a{
+  color: #333333;
+  padding: 10px;
+}
+.homeDropDown a:hover{
+  background-color: rgba(239, 49, 57, 0.1);
+}
+.homeDropDown a::before{
+  content: "";
+  background: #da1d25;
+  height: 6px;
+  width: 6px;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 5px;
+  border: inherit;
+}
+.homeDropDown ul{
   flex-direction: column;
-  justify-content: flex-start;
-  width: 100%;
+  align-items: baseline;
   padding: 0;
-  z-index: 7;
 }
-.homeDropDown ul li {
-  width: 100%;
-  text-align: left;
+.homeDropDown li{
+  margin: 15px 0px;
+  font-weight: normal;
 }
-/* .nav:hover .homeDropDown {
+.nav .drop {
+ 
+}
+.nav .drop:hover .homeDropDown {
   display: block;
   cursor: pointer;
-} */
-.homeDropDown a {
-  color: black;
+  height: auto;
+  padding: 15px;
+  width: 20%;
 }
-.navItem {
-  position: relative;
-}
-.navItem:hover .homeDropDown {
-  display: block;
-  cursor: pointer;
-}
+
 /* .homeLi:hover .homeDropDown {
   display: block;
 } */
 
 /* responsive */
-@media only screen and (max-width: 1000px) {
-}
 @media only screen and (max-width: 600px) {
+  .homeDropDown a{
+    font-size: 20px;
+  }
+  .homeDropDown h4{
+    font-size: 2em;
+  }
+  .nav .drop .homeDropDown{
+    top: 26%;
+    left: 25%;
+    width: 60%;
+    border-top: 1px solid black;
+}
+ 
+ .nav .homeDropDown ul{
+    min-height: 0;
+  }
   .nav ul {
     padding-top: 10px;
-    z-index: 9;
-    margin-top: -10px;
+    z-index: 2;
+
     background: white;
     position: absolute;
     left: 0%;
@@ -173,6 +209,7 @@
   .nav button {
     display: none;
   }
+}
   /*
 
 nth-child() is a pseudo-class matches elements based on their position in a group of siblings. Siblings are elements that are held in a parent section like the divs.
@@ -200,5 +237,14 @@ nth-child() is a pseudo-class matches elements based on their position in a grou
 
   .open .navIcon div:nth-child(3) {
     transform: rotateZ(45deg) translateX(-8px) translateY(-10px);
+  }
+
+/* key frame animation */
+@keyframes slide {
+  0%{
+    transform: translate(300px 0px);
+  }
+  100%{
+    transform: translate(900px 0px);
   }
 }

@@ -12,7 +12,7 @@ const Features = () => {
                     <div className={styles.title}>
                         <div>
                             <p className={styles.box}></p>
-                            <p className={styles.subtitle}> WHY CHOOSE US?</p>
+                            <p> WHY CHOOSE US?</p>
 
                         </div>
 
