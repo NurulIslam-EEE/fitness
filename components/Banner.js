@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from '../styles/Banner.module.css';
 import { faFacebookF, faInstagram, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from "next/image";
+import treadmills from '../public/img/treadmills.png';
+import tank from '../public/img/tank-top.png';
+import shower from '../public/img/shower.png';
 
 
 
 
 
 const Banner = () => {
+    const [bullet, setBullet] = useState(1);
     return (
         <div className={styles.banner}>
             <div className={styles.bannerSocialTitle}>
@@ -17,14 +22,22 @@ const Banner = () => {
 
 
 
-                        <div className={styles.bannerTitle}>
+                        {bullet === 1 ? <div className={styles.bannerTitle}>
+
 
                             <h3>Trainer in gym gives you training how to be fit </h3>
                             <h1>LOVE </h1> <h1><span>YOUR BODY.</span> </h1>
                             <h3>DO NOT LOSE TRACK OF YOUR GOAL DUE TO HEALTH ISSUES.</h3>
 
 
-                        </div>
+                        </div> : <div className={bullet === 2 && styles.bannerTitle}>
+
+                            <h3>Nothing tastes as good as being fit feels. </h3>
+                            <h1>MAKING </h1> <h1><span>FITNESS FUN.</span> </h1>
+                            <h3>Success never comes to those who quit..</h3>
+
+
+                        </div>}
                     </div>
                 </div>
                 <div className={styles.socialContainer}>
@@ -40,17 +53,24 @@ const Banner = () => {
 
                     <div className={styles.bar}></div>
                 </div>
+                <div className={styles.bullet}>
+                    <div className={bullet === 1 ? styles.whiteColor : styles.redColor} onClick={() => setBullet(1)}></div>
+                    <div className={bullet === 2 ? styles.whiteColor : styles.redColor} onClick={() => setBullet(2)}></div>
+                </div>
             </div>
+
 
             <div className={styles.bannerFooter}>
                 <div className={styles.bannerFooterChild1}>
+                    <Image src={treadmills} alt="" height='40' width='40' />
                     <h3>MODERN <br /> EQUIPMENT</h3>
                 </div>
                 <div className={styles.bannerFooterChild2}>
-
+                    <Image src={tank} alt="" height='40' width='40' />
                     <h3>COACHES <br /> CHAMPION</h3>
                 </div>
                 <div className={styles.bannerFooterChild3}>
+                    <Image src={shower} alt="" height='40' width='40' />
                     <h3>SWIMMING POOLS <br /> AVAILABLE</h3>
                 </div>
             </div>

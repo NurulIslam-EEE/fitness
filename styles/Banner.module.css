@@ -29,6 +29,7 @@
   margin-left: 110px;
   width: 1300px;
   height: 304px;
+  position: relative;
 }
 .socialContainer {
   position: absolute;
@@ -44,10 +45,9 @@
   font-size: 95px;
   line-height: 80px;
   font-weight: bolder;
- margin: 15px 0;
+  margin: 15px 0;
   padding: 0;
   text-transform: uppercase;
- 
 }
 .banner h3 {
   margin-top: 0;
@@ -57,7 +57,7 @@
   font-size: 26px;
   letter-spacing: 3px;
 }
-.banner h3:last-child{
+.banner h3:last-child {
   font-size: 20px;
   font-weight: 300;
 }
@@ -105,6 +105,14 @@
   justify-content: center;
   transition: 1s;
 }
+.bannerFooterChild1 h3,
+.bannerFooterChild2 h3,
+.bannerFooterChild3 h3 {
+  margin-left: 24px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Teko !important;
+}
 .bannerFooterChild1:hover,
 .bannerFooterChild3:hover {
   background: #da1d25;
@@ -146,6 +154,40 @@
 .redColor {
   background-color: #da1d25;
 }
+
+/* animation */
+/* .whiteColor:active .slide {
+  transition: 3s;
+  left: 0;
+}
+.redColor:active .slide {
+  transition: 3s;
+  left: 0;
+} */
+.slide {
+  position: absolute;
+  left: -100px;
+  /* width: 100px;
+    height: 100px; */
+  /* transform: translateX(300px); */
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 1s ease-in-out;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes slide {
+  100% {
+    left: 0px;
+  }
+}
+
 /* responsive */
 /* @media (min-width: 1400px) {
   .bannerSocialTitle2 {
