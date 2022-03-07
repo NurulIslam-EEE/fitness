@@ -30,7 +30,7 @@ const Navbar = () => {
                 </div>
                 <ul >
                     <li className={styles.navItem}>
-                        <Link href='/'>
+                        <Link className={styles.navLi} href='/'>
                             <a>HOME <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                         {/* dropdown */}
@@ -56,28 +56,28 @@ const Navbar = () => {
                         </div>
 
                     </li>
-                    <li>
-                        <Link href='/'>
+                    <li className={styles.navItem}>
+                        <Link className={styles.navLi} href='/'>
                             <a>PAGES <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href='/'>
+                    <li className={styles.navItem}>
+                        <Link className={styles.navLi} href='/'>
                             <a>CLASSES <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href='/'>
+                    <li className={styles.navItem}>
+                        <Link className={styles.navLi} href='/'>
                             <a>GALLERY <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href='/'>
+                    <li className={styles.navItem}>
+                        <Link className={styles.navLi} href='/'>
                             <a>BLOGS <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>
-                    <li>
-                        <Link href='/'>
+                    <li className={styles.navItem}>
+                        <Link className={styles.navLi} href='/'>
                             <a>SHOP <FontAwesomeIcon className={styles.downIcon} icon={faChevronDown} /></a>
                         </Link>
                     </li>

@@ -68,7 +68,10 @@
   padding-left: 30px;
   padding-right: 0px;
 }
-.nav li:hover a {
+.nav .navItem:hover a {
+  color: #da1d25;
+}
+.nav .homeDropDown li:hover a {
   color: #da1d25;
 }
 .nav .homeDropDown li:hover {
