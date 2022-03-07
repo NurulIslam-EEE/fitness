@@ -11,7 +11,6 @@
 }
 .bannerSocialTitle {
   color: white;
-
   position: relative;
 }
 .bannerSocialTitle2 {
@@ -44,10 +43,9 @@
   font-size: 95px;
   line-height: 80px;
   font-weight: bolder;
- margin: 15px 0;
+  margin: 15px 0;
   padding: 0;
   text-transform: uppercase;
- 
 }
 .banner h3 {
   margin-top: 0;
@@ -57,7 +55,7 @@
   font-size: 26px;
   letter-spacing: 3px;
 }
-.banner h3:last-child{
+.banner h3:last-child {
   font-size: 20px;
   font-weight: 300;
 }
@@ -93,8 +91,10 @@
   color: white;
   padding-left: 10%;
   align-items: flex-end;
-  height: 142px;
+  height: 150px;
   justify-content: center;
+  margin-bottom: 0;
+  font-family: Teko !important;
 }
 .bannerFooterChild1 {
   background: transparent;
@@ -104,6 +104,14 @@
   align-items: center;
   justify-content: center;
   transition: 1s;
+}
+.bannerFooterChild1 h3,
+.bannerFooterChild2 h3,
+.bannerFooterChild3 h3 {
+  margin-left: 24px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: Teko !important;
 }
 .bannerFooterChild1:hover,
 .bannerFooterChild3:hover {

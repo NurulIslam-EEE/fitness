@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import styles from '../styles/Banner.module.css';
 import { faFacebookF, faInstagram, faTwitter, faPinterest } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from "next/image";
+import treadmills from '../public/img/treadmills.png';
+import tank from '../public/img/tank-top.png';
+import shower from '../public/img/shower.png';
 
 
 
@@ -57,13 +61,15 @@ const Banner = () => {
 
             <div className={styles.bannerFooter}>
                 <div className={styles.bannerFooterChild1}>
+                    <Image src={treadmills} alt="" height='40' width='40' />
                     <h3>MODERN <br /> EQUIPMENT</h3>
                 </div>
                 <div className={styles.bannerFooterChild2}>
-
+                    <Image src={tank} alt="" height='40' width='40' />
                     <h3>COACHES <br /> CHAMPION</h3>
                 </div>
                 <div className={styles.bannerFooterChild3}>
+                    <Image src={shower} alt="" height='40' width='40' />
                     <h3>SWIMMING POOLS <br /> AVAILABLE</h3>
                 </div>
             </div>
